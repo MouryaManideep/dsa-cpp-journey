@@ -64,6 +64,23 @@ void trianglePattern_continue_numbers_reverse(int n)
     }
 }
 
+void trianglePattern_01(int n)
+{
+    int start = 1;
+    for(int i=0; i<n; i++)
+    {
+        if(i%2 == 0) {start = 1;}
+        else {start = 0;}
+
+        for(int j=0; j<i+1; j++)
+        {
+            cout<<start<<" ";
+            start = 1 - start;
+        }
+        cout<<endl;
+    }
+}
+
 int main()
 {
     int n;
@@ -71,11 +88,17 @@ int main()
     cout<<"Enter the number of rows: ";
     cin>>n;
 
-    // trianglePattern_rightangle(n);
-    // trianglePattern_numbers(n);
-    // trianglePattern_char(n);
-    // trianglePattern_continue_numbers(n);
+    trianglePattern_rightangle(n);
+    cout<<endl;
+    trianglePattern_numbers(n);
+    cout<<endl;
+    trianglePattern_char(n);
+    cout<<endl;
+    trianglePattern_continue_numbers(n);
+    cout<<endl;
     trianglePattern_continue_numbers_reverse(n);
+    cout<<endl;
+    trianglePattern_01(n);
 
     return 0;
 }

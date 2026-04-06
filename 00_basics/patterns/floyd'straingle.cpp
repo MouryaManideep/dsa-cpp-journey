@@ -50,8 +50,10 @@ int main()
     cout<<"Number of rows :";
     cin>>n;
 
-    // floydtriangle(n);
-    // floydtriangle_char(n);
+    floydtriangle(n);
+    cout<<endl;
+    floydtriangle_char(n);
+    cout<<endl;
     floydtriangle_char_reverse(n);
 
     return 0;

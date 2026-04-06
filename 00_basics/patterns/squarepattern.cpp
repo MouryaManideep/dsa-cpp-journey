@@ -55,24 +55,41 @@ void squarePattern_continue_char(int n)
     }
 }
 
+void hallowsquare(int n)
+{
+    for(int i=0; i<n; i++)
+    {
+        for(int j=0; j<n; j++)
+        {
+            if (i==0 || j==0 || i==n-1 || j==n-1 )
+            {
+                cout<<"*"<<" ";
+            }
+            else
+            {
+                cout<<" "<<" ";
+            }
+        }
+        cout<<endl;
+    }
+}
+
 int main()
 {
     int n;
-    // cout<<"Enter number of line: ";
-    // cin>>n;
-    // squarePattern_number(n);
-
-    // cout<<"Enter number of lines of characters : ";
-    // cin>>n;
-    // squarePattern_char(n);
-
-    // cout<<"Enter number of lines of continue number : ";
-    // cin>>n;
-    // squarePattern_continue_number(n);
-
-    cout<<"Enter number of lines of continue characters : ";
+    cout<<"Enter number of line: ";
     cin>>n;
+
+
+    squarePattern_number(n);
+    cout<<endl;
+    squarePattern_char(n);
+    cout<<endl;
+    squarePattern_continue_number(n);
+    cout<<endl;
     squarePattern_continue_char(n);
+    cout<<endl;
+    hallowsquare(n);
 
     return 0;
 }
