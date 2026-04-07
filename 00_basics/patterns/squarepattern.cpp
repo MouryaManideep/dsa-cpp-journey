@@ -74,6 +74,20 @@ void hallowsquare(int n)
     }
 }
 
+void squarePattern_continue_spiral(int n)
+{
+    if(n>0){
+        for(int i=0; i<(2*n)-1; i++)
+        {
+            for(int j=0; j<(2*n)-1; j++)
+            {
+                cout<<n - min(min(i,j),min(((2*n)-2-j),((2*n)-2-i)))<<" ";
+            }
+            cout<<endl;
+        }
+    }
+}
+
 int main()
 {
     int n;
@@ -81,15 +95,17 @@ int main()
     cin>>n;
 
 
-    squarePattern_number(n);
-    cout<<endl;
-    squarePattern_char(n);
-    cout<<endl;
-    squarePattern_continue_number(n);
-    cout<<endl;
-    squarePattern_continue_char(n);
-    cout<<endl;
-    hallowsquare(n);
+    // squarePattern_number(n);
+    // cout<<endl;
+    // squarePattern_char(n);
+    // cout<<endl;
+    // squarePattern_continue_number(n);
+    // cout<<endl;
+    // squarePattern_continue_char(n);
+    // cout<<endl;
+    // hallowsquare(n);
+    // cout<<endl;
+    squarePattern_continue_spiral(n);
 
     return 0;
 }
