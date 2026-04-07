@@ -95,16 +95,16 @@ int main()
     cin>>n;
 
 
-    // squarePattern_number(n);
-    // cout<<endl;
-    // squarePattern_char(n);
-    // cout<<endl;
-    // squarePattern_continue_number(n);
-    // cout<<endl;
-    // squarePattern_continue_char(n);
-    // cout<<endl;
-    // hallowsquare(n);
-    // cout<<endl;
+    squarePattern_number(n);
+    cout<<endl;
+    squarePattern_char(n);
+    cout<<endl;
+    squarePattern_continue_number(n);
+    cout<<endl;
+    squarePattern_continue_char(n);
+    cout<<endl;
+    hallowsquare(n);
+    cout<<endl;
     squarePattern_continue_spiral(n);
 
     return 0;
