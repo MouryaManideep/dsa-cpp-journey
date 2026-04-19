@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-sumofdigits(int digit)
+int sumofdigits(int digit)
 {
     int sum=0;
 

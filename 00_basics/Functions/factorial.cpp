@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-factorial(int n)
+int factorial(int n)
 {
     int fact = 1;
 
