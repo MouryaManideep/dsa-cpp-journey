@@ -1,0 +1,17 @@
+Electricity Street lamps problem
+input 1:
+8 -> street lamps
+1 1 1 0 1 1 1 1 ->'1' is on and '0' is off
+2 -> days
+
+day0 --> 1 1 1 0 1 1 1 1
+day1 --> 1 0 1 0 1 0 0 1
+day2 --> 0 0 0 0 0 1 1 0 == ans
+
+input2:
+8
+1 0 0 0 0 1 0 0
+1
+
+day0 --> 1 0 0 0 0 1 0 0
+day1 --> 0 1 0 0 1 0 1 0 == ans
