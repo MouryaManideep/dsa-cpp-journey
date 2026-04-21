@@ -1,17 +1,17 @@
 #include<iostream>
 using namespace std;
 
-int decToBinary(int num)
+int binToDec(int num)
 {
     int ans=0, pow=1;
 
     while(num>0)
     {
-        int rem = num%2;
-        num /= 2;
+        int rem = num%10;
+        num /= 10;
 
         ans += (rem*pow);
-        pow *= 10; 
+        pow *= 2; 
     }
 
     return ans;
@@ -23,10 +23,7 @@ int main()
     cout<<"Enter Number till binary: ";
     cin>>num;
 
-    for(int i=1; i<=num; i++)
-    {
-        cout<<i<<" = "<<decToBinary(i)<<endl;
-    }
+    cout<<num<<" = "<<binToDec(num)<<endl;
 
     return 0;
 }
